@@ -11,6 +11,7 @@
             padding: 40px 20px;
             background-color: #f4f4f9;
             color: #333;
+            /* Centraliza todo o conteúdo do body */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -29,6 +30,7 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             width: 100%;
             max-width: 320px;
+            /* Centraliza os elementos internos do card */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -41,7 +43,7 @@
         }
 
         .site-card img {
-
+            /* Tamanho menor para as imagens */
             width: 100px;
             height: 100px;
             object-fit: contain;
@@ -69,17 +71,19 @@
 </head>
 <body>
 
+    <!-- Título do corpo da página -->
     <h1>Meus sites favoritos: Lucas</h1>
 
- 
+    <!-- 1. Netflix -->
     <div class="site-card">
         <h2>1. Netflix</h2>
         <a href="https://www.netflix.com/" target="_blank">
-            <img src="data:image/png;base64,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" alt="Logo da Netflix">
+            <img src="data:image/png;base64,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" alt="Logo da Netflix">
         </a>
         <a href="https://www.netflix.com/" target="_blank">Acessar a Netflix</a>
     </div>
 
+    <!-- 2. Roblox -->
     <div class="site-card">
         <h2>2. Roblox</h2>
         <a href="https://www.roblox.com/" target="_blank">
@@ -88,6 +92,7 @@
         <a href="https://www.roblox.com/" target="_blank">Acessar o Roblox</a>
     </div>
 
+    <!-- 3. YouTube -->
     <div class="site-card">
         <h2>3. YouTube</h2>
         <a href="https://www.youtube.com/" target="_blank">
@@ -96,6 +101,7 @@
         <a href="https://www.youtube.com/" target="_blank">Acessar o YouTube</a>
     </div>
 
+    <!-- 4. Steam -->
     <div class="site-card">
         <h2>4. Steam</h2>
         <a href="https://store.steampowered.com/" target="_blank">
@@ -104,6 +110,7 @@
         <a href="https://store.steampowered.com/" target="_blank">Acessar a Steam</a>
     </div>
 
+    <!-- 5. GitHub -->
     <div class="site-card">
         <h2>5. GitHub</h2>
         <a href="https://github.com/" target="_blank">
